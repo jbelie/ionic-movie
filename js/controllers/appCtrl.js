@@ -2,7 +2,7 @@ angular.module('starter.controllers', []).controller('AppCtrl', function($scope,
 
 	// Init var
 	$scope.showSearchBar = false;
-	$scope.query = "A";
+	$scope.query = "";
 	
 	// Confirm Javascript
 	$scope.showConfirm = function() {
