@@ -2,7 +2,7 @@ angular.module('starter.controllers', []).controller('AppCtrl', function($scope,
 
 	// Init var
 	$scope.showSearchBar = false;
-	$scope.query = "A";
+	$scope.query = "";
 	
 	// Confirm Javascript
 	$scope.showConfirm = function() {
@@ -20,7 +20,7 @@ angular.module('starter.controllers', []).controller('AppCtrl', function($scope,
 	 
 	 // Search
 	$scope.search = function(query){
-		$scope.showSearch = true;
+		$scope.showSearchBar = false;
 		$location.path("/search/" + query);
 	}
 	$scope.showSearchAction = function(){

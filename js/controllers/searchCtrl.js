@@ -2,7 +2,7 @@ angular.module('starter').controller('SearchCtrl', function($scope, $ionicLoadin
 	
 		// Init var
 		$scope.query = $stateParams.query;
-		console.log($scope.query);
+		
         $scope.currentPage = 1;
         $scope.totalPages = 0;
 
