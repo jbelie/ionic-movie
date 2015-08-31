@@ -1,0 +1,48 @@
+<ion-view view-title="{{movie.title}}">
+	<ion-content id="gallery">
+		<div id="movie-image">
+			<img ng-src="http://image.tmdb.org/t/p/w500/{{movie.poster_path}}" class="full-image" />
+		</div>
+		<div id="movie-details">	
+			<h2>{{movie.title}}</h2>
+			<div class="row movie-row">
+				<div class="col col-25 col-left">
+					<span class="bold">Genre</span>
+				</div>
+				<div class="col col-75 col-right">
+					<ul>
+						<li ng-repeat="genre in movie.genres">{{genre.name}}</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row movie-row">
+				<div class="col col-25 col-left">
+					<span class="bold">Storyline</span>
+				</div>
+				<div class="col col-75 col-right">
+					{{movie.overview}}
+				</div>
+			</div>					
+			<div class="row movie-row">
+				<div class="col col-25 col-left">
+					<span class="bold">Country</span>
+				</div>
+				<div class="col col-75 col-right">
+					<ul>
+						<li ng-repeat="production in movie.production_countries">{{production.name}}</li>
+					</ul>							
+				</div>
+			</div>					
+			<div class="row movie-row">
+				<div class="col col-25 col-left">
+					<span class="bold">Date</span>
+				</div>
+				<div class="col col-75 col-right">
+					{{movie.release_date | date: 'yyyy'}}
+				</div>
+			</div>		
+		</div><!--movie-details-->
+	</ion-content>
+</ion-view>
+	
+	

@@ -1,0 +1,10 @@
+<ion-view view-title="Gallery">
+	<ion-content id="gallery">
+		<div class="gallery-item" ng-repeat="image in images">
+			<a href='#' ng-click="showImage($index)" >
+				<img src="{{image.thumbnail}}" alt="{{image.legend}}" class="full-image"  />
+			</a>
+		</div>
+
+	</ion-content>
+</ion-view>

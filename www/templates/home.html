@@ -1,0 +1,18 @@
+<ion-view view-title="Ionic Movie App">
+	<ion-content>
+
+		
+		<section="movies" class="padding">
+			<h1 class="titre-h1 padding">
+				<span class="ion ion-ios-film-outline"></span>
+				Popular movies 
+				<span class="little gray italic">(with themoviedb.org API)</span>
+			</h1>
+
+			<ul class="movies list">
+				<movie></movie>
+				<li id="no-movies" ng-hide="movies.length">No Movies</li>
+			</ul>
+		</section>
+	</ion-content>
+</ion-view>

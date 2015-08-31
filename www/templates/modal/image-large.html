@@ -1,0 +1,12 @@
+<ion-modal-view id="modal">
+	<ion-header-bar class="bar-positivite">
+		<h3 class="title">{{imgLargeLegend}}</h1>
+		
+			<button class="button button-icon button-clear ion-close" ng-click="closeModal()">
+			</button>
+	</ion-header-bar>
+	
+	<ion-content overflow-scroll="true">
+		<img src="{{imgLargeSrc}}" alt="{{imgLargeLegend}}"  class="img-modal" on-swipe-left="swipeImage('left')" 	on-swipe-right="swipeImage('right')"/>
+	</ion-content>
+</ion-modal-view>

@@ -1,0 +1,15 @@
+<li ng-repeat="movie in movies" class="">
+	<a href="#/movie/{{movie.id}}" class="movie item item-thumbnail-left">
+		<img ng-src="http://image.tmdb.org/t/p/w500{{movie.poster_path}}" ng-hide="!movie.poster_path" class="item-image"/>
+		<h3 ng-bind="movie.title"></h3>
+
+		<div class="movie-info movie-date"></div>
+			Year:
+			<span class="col-xs-10" ng-bind="movie.release_date | date:'yyyy'"></span>
+		</div>
+		<div class="movie-info movie-rate">
+			Rating: {{movie.vote_average}} / 10
+
+		</div>
+	</a>
+</li>
