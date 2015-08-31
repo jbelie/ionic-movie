@@ -8,7 +8,6 @@ angular.module('starter').controller('GalleryCtrl', function($scope, $ionicModal
 	
 	// Change image modal
 	$scope.changeImage = function(){
-		console.log($scope.indexImage);
 		$scope.imgLargeSrc = images[$scope.indexImage]['large'];
 		$scope.imgLargeLegend = images[$scope.indexImage]['legend'];			
 	}
