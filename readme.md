@@ -5,4 +5,4 @@
 Build with themovie.org API
 
 
-<a href="http://jbelie.github.io/ionic-movie/" target="_blank">Demo : http://jbelie.github.io/ionic-movie/</a>
+Demo :  <a href="http://jbelie.github.io/ionic-movie/" target="_blank">jbelie.github.io/ionic-movie</a>
